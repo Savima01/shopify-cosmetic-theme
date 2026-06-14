@@ -522,6 +522,38 @@
 
 }
 
+/* ─── Suchleiste — kompakt ─── */
+
+.header__search,
+.header-search {
+  flex: 0 1 260px !important;
+  max-width: 260px !important;
+  min-width: 0 !important;
+}
+
+.header__search .search__input,
+.header-search input[type="search"] {
+  font-family: 'Montserrat', sans-serif !important;
+  font-size: 11px !important;
+  letter-spacing: 0.12em !important;
+  border: 1px solid rgba(242, 208, 200, 0.25) !important;
+  background: rgba(242, 208, 200, 0.05) !important;
+  color: var(--aphoria-rose-copper) !important;
+  border-radius: 0 !important;
+  padding: 8px 14px !important;
+  height: 38px !important;
+}
+
+.header__search .search__input::placeholder {
+  color: rgba(242, 208, 200, 0.45) !important;
+  letter-spacing: 0.12em !important;
+}
+
+.header__search .search__button {
+  color: var(--aphoria-rose-copper) !important;
+  background: transparent !important;
+}
+
 /* ─── Icons: Suche, Wishlist, Warenkorb ─── */
 
 .header__icons .icon,
