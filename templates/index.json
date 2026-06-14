@@ -12,12 +12,13 @@
     "aphoria_hero_main": {
       "type": "aphoria-hero",
       "settings": {
+        "image": "shopify://shop_images/b_Luxury_skincare_adve.png",
         "video": "",
         "height_mobile": 700,
         "height_desktop": 900,
         "overlay_opacity": 55,
         "eyebrow": "Luxus Beauty · APHORIA",
-        "heading": "<p><em>The Art of<br>Pure Beauty</em></p>",
+        "heading": "<p><em>The Art of<br/>Pure Beauty</em></p>",
         "subheading": "Wissenschaft trifft Ritual — entwickelt für anspruchsvolle Haut.",
         "content_alignment": "left",
         "text_color": "#f2d0c8",
