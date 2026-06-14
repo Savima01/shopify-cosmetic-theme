@@ -14,109 +14,62 @@
     "announcement-bar": {
       "type": "announcement-bar",
       "blocks": {
-        "announcement-bar-0": {
+        "announcement_shipping": {
           "type": "announcement",
           "settings": {
-            "text": "Welcome to our store",
-            "link_text": "read more",
-            "link": "/"
+            "text": "✦ Kostenloser Versand ab 80 € — Weltweit",
+            "link_text": "",
+            "link": ""
           }
         },
-        "announcement_jcCY8c": {
+        "announcement_new": {
           "type": "announcement",
           "settings": {
-            "text": "test announcement second",
-            "link_text": "Read more",
-            "link": "shopify://products/antique-drawers"
+            "text": "✦ Neu: Aphoria Signature Fragrance — jetzt entdecken",
+            "link_text": "Entdecken",
+            "link": "shopify://collections/aphoria-collection"
+          }
+        },
+        "announcement_values": {
+          "type": "announcement",
+          "settings": {
+            "text": "✦ Vegan · Cruelty-Free · Nachhaltig produziert",
+            "link_text": "",
+            "link": ""
           }
         }
       },
       "block_order": [
-        "announcement-bar-0",
-        "announcement_jcCY8c"
+        "announcement_shipping",
+        "announcement_new",
+        "announcement_values"
       ],
       "settings": {
         "color_scheme": "scheme-3",
         "home_page_only": false,
         "show_line_separator": false,
         "auto_rotate": true,
-        "change_slides_speed": 5
+        "change_slides_speed": 4
       }
     },
     "header": {
       "type": "header",
-      "blocks": {
-        "style_1_7BFbFK": {
-          "type": "style_1",
-          "settings": {
-            "megamenu_items_1": "New Arrivals",
-            "title_menu_1": "Shop by",
-            "url_shop_1": "shopify://collections",
-            "link_menu_1": "main-menu",
-            "title_featured_product_1": "Featured Products",
-            "collection_1": "all",
-            "link_banner_image_1_1": "shopify://collections/home-garden"
-          }
-        },
-        "style_2_Jiqmib": {
-          "type": "style_2",
-          "settings": {
-            "megamenu_items_2": "Sale",
-            "title_menu_2": "Shop by",
-            "url_shop_2": "shopify://collections/all",
-            "link_menu_2": "main-menu",
-            "title_featured_product_2": "Top Brands",
-            "brands_link_2_1": "/",
-            "brands_link_2_2": "",
-            "brands_link_2_3": "",
-            "brands_link_2_4": "",
-            "link_banner_image_2_1": "/",
-            "link_banner_image_2_2": "/"
-          }
-        },
-        "style_3_qdRfyY": {
-          "type": "style_3",
-          "settings": {
-            "megamenu_items_3": "Collections",
-            "countdown_text": "Special offer: Sale upto 40% off on selected items.",
-            "countdown_text_end": "End ins:",
-            "countdown_timer": "2024/12/25 22:11:00"
-          }
-        },
-        "style_4_ay3gKz": {
-          "type": "style_4",
-          "settings": {
-            "megamenu_items_4": "Kids products",
-            "link_banner_image_4_1": "shopify://collections/all",
-            "title_featured_product_4": "Top Rated",
-            "collection_4": "home-garden",
-            "link_banner_image_4_2": "shopify://collections/all",
-            "link_banner_image_4_3": "shopify://collections"
-          }
-        }
-      },
-      "block_order": [
-        "style_1_7BFbFK",
-        "style_2_Jiqmib",
-        "style_3_qdRfyY",
-        "style_4_ay3gKz"
-      ],
       "settings": {
         "color_scheme": "scheme-1",
         "color_scheme_1": "scheme-1",
-        "logo_position": "middle-left",
+        "logo_position": "middle-center",
         "enable-header-wishlist": true,
         "menu": "main-menu",
-        "menu_type_desktop": "drawer",
-        "sticky_header_type": "always",
-        "show_line_separator": true,
-        "enable_country_selector": true,
-        "enable_language_selector": true,
+        "menu_type_desktop": "mega",
+        "sticky_header_type": "reduce-logo-size",
+        "show_line_separator": false,
+        "enable_country_selector": false,
+        "enable_language_selector": false,
         "mobile_logo_position": "center",
         "margin_bottom": 0,
         "padding_top": 20,
         "padding_bottom": 0,
-        "enable_megamenu": true
+        "enable_megamenu": false
       }
     }
   },
