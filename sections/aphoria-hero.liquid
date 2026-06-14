@@ -6,10 +6,12 @@
 -%}
 {%- style -%}
   #aphoria-hero-{{ section.id }} {
-    --hero-height-mobile:  {{ section.settings.height_mobile }}px;
-    --hero-height-desktop: {{ section.settings.height_desktop }}px;
-    --hero-content-align:  {{ section.settings.content_alignment }};
-    --hero-text-color:     {{ section.settings.text_color }};
+    --hero-height-mobile:    {{ section.settings.height_mobile }}px;
+    --hero-height-desktop:   {{ section.settings.height_desktop }}px;
+    --hero-content-align:    {{ section.settings.content_alignment }};
+    --hero-text-color:       {{ section.settings.text_color }};
+    --hero-vertical-align:   {{ section.settings.content_position }};
+    --hero-padding-top:      {{ section.settings.content_offset }}px;
   }
   #aphoria-hero-{{ section.id }} .aphoria-hero__overlay {
     background: linear-gradient(
@@ -118,7 +120,7 @@
   width: 100%;
   min-height: var(--hero-height-mobile, 90vh);
   display: flex;
-  align-items: center;
+  align-items: var(--hero-vertical-align, center);
   overflow: hidden;
 }
 
@@ -178,7 +180,7 @@
   position: relative;
   z-index: 1;
   width: 100%;
-  padding-top: calc(var(--header-height, 100px) + 60px);
+  padding-top: var(--hero-padding-top, 160px);
   padding-bottom: 80px;
 }
 
@@ -370,12 +372,34 @@
     {
       "type": "select",
       "id": "content_alignment",
-      "label": "Ausrichtung",
+      "label": "Horizontal-Ausrichtung",
       "options": [
         { "value": "left", "label": "Links" },
         { "value": "center", "label": "Mitte" }
       ],
       "default": "left"
+    },
+    {
+      "type": "select",
+      "id": "content_position",
+      "label": "Vertikale Position",
+      "options": [
+        { "value": "flex-start", "label": "Oben" },
+        { "value": "center", "label": "Mitte" },
+        { "value": "flex-end", "label": "Unten" }
+      ],
+      "default": "flex-start"
+    },
+    {
+      "type": "range",
+      "id": "content_offset",
+      "label": "Abstand oben (px)",
+      "min": 60,
+      "max": 400,
+      "step": 10,
+      "default": 140,
+      "unit": "px",
+      "info": "Abstand des Textes vom oberen Rand (inkl. Header)"
     },
     {
       "type": "color",
