@@ -26,7 +26,7 @@
   --aphoria-white: #FFFFFF;
 
   --aphoria-font-heading: var(--font-heading-family, 'Bodoni Moda', serif);
-  --aphoria-font-body: var(--font-body-family, 'Montserrat', sans-serif);
+  --aphoria-font-body: var(--font-body-family, var(--font-body-family));
 
   --aphoria-letter-spacing-wide: 0.15em;
   --aphoria-letter-spacing-wider: 0.25em;
@@ -75,10 +75,10 @@
 /* ─── Typography ─── */
 
 .aphoria-heading {
-  font-family: var(--aphoria-font-heading);
+  font-family: var(--font-heading-family);
   font-style: italic;
   font-weight: 400;
-  letter-spacing: 0.02em;
+  letter-spacing: 0;
   line-height: 1.1;
 }
 
@@ -376,7 +376,7 @@
 /* Announcement Bar */
 .announcement-bar__link,
 .announcement-bar__message {
-  font-family: 'Montserrat', sans-serif !important;
+  font-family: var(--font-body-family) !important;
   font-size: 10.5px !important;
   font-weight: 500 !important;
   letter-spacing: 0.2em !important;
@@ -416,7 +416,7 @@
 /* Logo — Textversion (kein Bild hinterlegt) */
 .header__heading-link .h2,
 .header__heading-link span.h2 {
-  font-family: 'Bodoni Moda', Georgia, serif !important;
+  font-family: var(--font-heading-family) !important;
   font-style: italic !important;
   font-size: clamp(24px, 3vw, 36px) !important;
   font-weight: 400 !important;
@@ -501,7 +501,7 @@
   }
 
   .site-nav > .menu-lv-1 > .nav-action a {
-    font-family: 'Montserrat', sans-serif !important;
+    font-family: var(--font-body-family) !important;
     color: inherit !important;
     transition: color 0.2s ease !important;
   }
@@ -536,7 +536,7 @@
 
   .site-nav .menu-lv-2 > .nav-action,
   .site-nav .menu-lv-3 > .nav-action {
-    font-family: 'Montserrat', sans-serif !important;
+    font-family: var(--font-body-family) !important;
     font-size: 10px !important;
     font-weight: 500 !important;
     letter-spacing: 0.18em !important;
@@ -564,7 +564,7 @@
 
 .header__search .search__input,
 .header-search input[type="search"] {
-  font-family: 'Montserrat', sans-serif !important;
+  font-family: var(--font-body-family) !important;
   font-size: 11px !important;
   letter-spacing: 0.12em !important;
   border: 1px solid rgba(242, 208, 200, 0.25) !important;
@@ -605,7 +605,7 @@
 .cart-count-bubble {
   background: var(--aphoria-bordeaux) !important;
   color: var(--aphoria-rose-copper) !important;
-  font-family: 'Montserrat', sans-serif !important;
+  font-family: var(--font-body-family) !important;
   font-size: 9px !important;
   font-weight: 700 !important;
 }
@@ -656,13 +656,13 @@
 
 /* ─── Font Overrides — globale Konsistenz ─── */
 
-/* Alle h1-h4 auf dem Store */
+/* Alle h1-h4 auf dem Store — folgen dem Font-Picker aus Theme-Einstellungen */
 h1, h2, h3, h4,
 .h1, .h2, .h3, .h4 {
-  font-family: var(--aphoria-font-heading) !important;
-  font-style: italic;
-  font-weight: 400;
-  letter-spacing: 0.02em;
+  font-family: var(--font-heading-family) !important;
+  font-style: var(--font-heading-style) !important;
+  font-weight: var(--font-heading-weight) !important;
+  letter-spacing: 0 !important;
 }
 
 /* Body-Text global */
