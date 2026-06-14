@@ -496,11 +496,11 @@
 
   /* Nav-Link Wrapper */
   .site-nav > .menu-lv-1 > .nav-action {
-    font-size: 10px !important;
+    font-size: 12px !important;
     font-weight: 600 !important;
-    letter-spacing: 0.22em !important;
+    letter-spacing: 0.18em !important;
     text-transform: uppercase !important;
-    padding: 1rem 1.6rem !important;
+    padding: 1rem 1.8rem !important;
     color: var(--aphoria-rose-copper) !important;
   }
 
@@ -557,15 +557,15 @@
 
 }
 
-/* ─── Suchleiste — kompakt ─── */
+/* ─── Suchleiste — auf Desktop ausgeblendet (Luxury-Pattern) ─── */
 
-.header__search,
-.header-search {
-  flex: 0 1 260px !important;
-  max-width: 260px !important;
-  min-width: 0 !important;
+@media (min-width: 990px) {
+  .header__search {
+    display: none !important;
+  }
 }
 
+/* Mobile Suche */
 .header__search .search__input,
 .header-search input[type="search"] {
   font-family: var(--font-body-family) !important;
