@@ -17,10 +17,14 @@
         "height_mobile": 700,
         "height_desktop": 900,
         "overlay_opacity": 80,
+        "overlay_tint": "#7c1d3c",
+        "overlay_tint_opacity": 20,
         "eyebrow": "Luxus Beauty · APHORIA",
         "heading": "<p><em>The Art of<br/>Pure Beauty</em></p>",
         "subheading": "Wissenschaft trifft Ritual — entwickelt für anspruchsvolle Haut.",
         "content_alignment": "left",
+        "content_position": "flex-start",
+        "content_offset": 120,
         "text_color": "#f2d0c8",
         "button_label": "Kollektion entdecken",
         "button_url": "shopify://collections/all",
@@ -32,12 +36,16 @@
     "aphoria_featured_collection_main": {
       "type": "aphoria-featured-collection",
       "settings": {
+        "bg_color": "#faf6f3",
+        "eyebrow_color": "#7c1d3c",
+        "heading_color": "#0a0205",
+        "card_title_color": "#0a0205",
+        "card_price_color": "#7c1d3c",
         "eyebrow": "Unsere Bestseller",
         "heading": "Die Kollektion",
         "collection": "aphoria-collection",
         "products_to_show": 4,
         "columns": 4,
-        "bg_color": "#faf6f3",
         "button_label": "Alle Produkte ansehen",
         "button_url": "shopify://collections/aphoria-collection"
       }
@@ -76,6 +84,12 @@
         "value_3"
       ],
       "settings": {
+        "bg_color": "#0a0205",
+        "heading_color": "#f2d0c8",
+        "text_color": "#c8a09a",
+        "eyebrow_color": "#c9a57e",
+        "value_title_color": "#c9a57e",
+        "accent_color": "#7c1d3c",
         "eyebrow": "Unsere Geschichte",
         "heading": "<p><em>Schönheit,<br>neu definiert</em></p>",
         "text": "<p>APHORIA entstand aus der Überzeugung, dass Schönheitspflege ein Ritual sein sollte — ein Moment der reinen Verwöhnung. Jedes Produkt verbindet modernste Wissenschaft mit der Kraft natürlicher Inhaltsstoffe.</p>",
