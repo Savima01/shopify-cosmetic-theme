@@ -9,84 +9,22 @@
  */
 {
   "sections": {
-    "slideshow_aGrFXw": {
-      "type": "slideshow",
-      "blocks": {
-        "slide_X9Y9kB": {
-          "type": "slide",
-          "settings": {
-            "heading": "SAFE 50% OFF",
-            "heading_size": "h1",
-            "h1_color": "#ffffff",
-            "subheading": "Nullam aliquet vestibulum augue non varius. Cras cosmo congue delos melitos. Duis tristique del ante le maliquam praesento.",
-            "color_richtext": "#ffffff",
-            "button_label": "SHOP NOW",
-            "link": "shopify://products/antique-drawers",
-            "button_style_secondary": false,
-            "button_label_color": "#000000",
-            "button_bg_color": "#ffffff",
-            "box_align": "middle-center",
-            "show_text_box": true,
-            "text_alignment": "right",
-            "image_overlay_opacity": 0,
-            "text_alignment_mobile": "right"
-          }
-        },
-        "slide_wqqKg9": {
-          "type": "slide",
-          "settings": {
-            "heading": "Nullam aliquet",
-            "heading_size": "h1",
-            "h1_color": "#000000",
-            "subheading": "Nullam aliquet vestibulum augue non varius. Cras cosmo congue delos melitos. Duis tristique del ante le maliquam praesento.",
-            "color_richtext": "#000000",
-            "button_label": "SHOP NOW",
-            "link": "shopify://collections/home-garden",
-            "button_style_secondary": false,
-            "button_label_color": "#000000",
-            "button_bg_color": "#ffffff",
-            "box_align": "middle-center",
-            "show_text_box": true,
-            "text_alignment": "left",
-            "image_overlay_opacity": 0,
-            "text_alignment_mobile": "left"
-          }
-        },
-        "slide_cEmkWE": {
-          "type": "slide",
-          "settings": {
-            "heading": "CRAS COSMO",
-            "heading_size": "h1",
-            "h1_color": "#ffffff",
-            "subheading": "Nullam aliquet vestibulum augue non varius. Cras cosmo congue delos melitos. Duis tristique del ante le maliquam praesento.",
-            "color_richtext": "#ffffff",
-            "button_label": "SHOP NOW",
-            "link": "shopify://collections/all",
-            "button_style_secondary": false,
-            "button_label_color": "#ffffff",
-            "button_bg_color": "#000000",
-            "box_align": "middle-center",
-            "show_text_box": true,
-            "text_alignment": "center",
-            "image_overlay_opacity": 0,
-            "text_alignment_mobile": "center"
-          }
-        }
-      },
-      "block_order": [
-        "slide_X9Y9kB",
-        "slide_wqqKg9",
-        "slide_cEmkWE"
-      ],
+    "aphoria_hero_main": {
+      "type": "aphoria-hero",
       "settings": {
-        "layout": "full_width",
-        "slide_height": "medium",
-        "slider_visual": "dots",
-        "auto_rotate": true,
-        "change_slides_speed": 5,
-        "image_behavior": "ambient",
-        "show_text_below": true,
-        "accessibility_info": "Slideshow about our brand"
+        "eyebrow": "Luxus Beauty · APHORIA",
+        "heading": "<p><em>The Art of<br>Pure Beauty</em></p>",
+        "subheading": "Wissenschaft trifft Ritual — entwickelt für anspruchsvolle Haut.",
+        "content_alignment": "left",
+        "text_color": "#F2D0C8",
+        "height_mobile": 700,
+        "height_desktop": 900,
+        "overlay_opacity": 55,
+        "button_label": "Kollektion entdecken",
+        "button_url": "shopify://collections/all",
+        "button_2_label": "Bestseller",
+        "button_2_url": "shopify://collections/all",
+        "show_scroll_indicator": true
       }
     },
     "main_icon_with_text_eYyJAy": {
@@ -827,7 +765,7 @@
     }
   },
   "order": [
-    "slideshow_aGrFXw",
+    "aphoria_hero_main",
     "main_icon_with_text_eYyJAy",
     "main_img_link_Fyr7Ky",
     "main_block_four_banners_G6ELgm",
