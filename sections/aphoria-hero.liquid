@@ -46,24 +46,24 @@
     <div class="aphoria-hero__inner">
 
       {%- if section.settings.eyebrow != blank -%}
-        <p class="aphoria-hero__eyebrow aphoria-label aphoria-reveal">
+        <p class="aphoria-hero__eyebrow aphoria-label aphoria-hero__animate aphoria-hero__animate--1">
           {{ section.settings.eyebrow | escape }}
         </p>
       {%- endif -%}
 
       {%- if section.settings.heading != blank -%}
-        <h1 class="aphoria-hero__heading aphoria-heading aphoria-reveal aphoria-reveal--delay-1">
+        <h1 class="aphoria-hero__heading aphoria-heading aphoria-hero__animate aphoria-hero__animate--2">
           {{ section.settings.heading }}
         </h1>
       {%- endif -%}
 
       {%- if section.settings.subheading != blank -%}
-        <p class="aphoria-hero__subheading aphoria-body aphoria-reveal aphoria-reveal--delay-2">
+        <p class="aphoria-hero__subheading aphoria-body aphoria-hero__animate aphoria-hero__animate--3">
           {{ section.settings.subheading | escape }}
         </p>
       {%- endif -%}
 
-      <div class="aphoria-hero__actions aphoria-reveal aphoria-reveal--delay-3">
+      <div class="aphoria-hero__actions aphoria-hero__animate aphoria-hero__animate--4">
         {%- if section.settings.button_label != blank -%}
           <a
             href="{{ section.settings.button_url }}"
@@ -144,11 +144,24 @@
   );
 }
 
+@keyframes aphoria-hero-in {
+  from { opacity: 0; transform: translateY(22px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+
+.aphoria-hero__animate {
+  animation: aphoria-hero-in 0.8s cubic-bezier(0.16, 1, 0.3, 1) both;
+}
+.aphoria-hero__animate--1 { animation-delay: 0.15s; }
+.aphoria-hero__animate--2 { animation-delay: 0.35s; }
+.aphoria-hero__animate--3 { animation-delay: 0.55s; }
+.aphoria-hero__animate--4 { animation-delay: 0.75s; }
+
 .aphoria-hero__content {
   position: relative;
   z-index: 1;
   width: 100%;
-  padding-top: 120px;
+  padding-top: calc(var(--header-height, 100px) + 60px);
   padding-bottom: 80px;
 }
 
