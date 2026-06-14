@@ -16,10 +16,15 @@
         "height_mobile": 700,
         "height_desktop": 900,
         "overlay_opacity": 55,
+        "overlay_tint": "#7c1d3c",
+        "overlay_tint_opacity": 20,
         "eyebrow": "Luxus Beauty · APHORIA",
         "heading": "<p><em>The Art of<br>Pure Beauty</em></p>",
         "subheading": "Wissenschaft trifft Ritual — entwickelt für anspruchsvolle Haut.",
         "content_alignment": "left",
+        "content_position": "flex-start",
+        "content_offset": 140,
+        "heading_size": 72,
         "text_color": "#f2d0c8",
         "button_label": "Kollektion entdecken",
         "button_url": "shopify://collections/all",
@@ -28,17 +33,118 @@
         "show_scroll_indicator": true
       }
     },
+    "main_image_with_text_overlay_m4U7Aa": {
+      "type": "main-image-with-text-overlay",
+      "blocks": {
+        "image_item_8Kq4yw": {
+          "type": "image_item",
+          "settings": {
+            "image": "shopify://shop_images/hydra-veil-moisturizer_d682e7e1-5b7d-42b3-8c21-1b7266e177f5.webp",
+            "title": "Hautpflege",
+            "des_bottom": "Seren, Feuchtigkeitspflege, Masken — modernste Formel für strahlende Haut.",
+            "link": "Entdecken",
+            "link_url": "shopify://collections/aphoria-collection"
+          }
+        },
+        "image_item_HNzABm": {
+          "type": "image_item",
+          "settings": {
+            "image": "shopify://shop_images/a-aphoria-rose-enzyme_33acece1-d668-45b3-98a4-41d9451c11f9.webp",
+            "title": "Körperpflege",
+            "des_bottom": "Luxuriöse Körperpflegeprodukte für samtweiches, verwöhntes Hautgefühl.",
+            "link": "Entdecken",
+            "link_url": "shopify://collections/aphoria-collection"
+          }
+        },
+        "image_item_6RTt7N": {
+          "type": "image_item",
+          "settings": {
+            "image": "shopify://shop_images/gemini-generated-image.webp",
+            "title": "Düfte",
+            "des_bottom": "Komplexe Düfte, handgefertigt — ein Kunstwerk für die Sinne.",
+            "link": "Entdecken",
+            "link_url": "shopify://collections/aphoria-collection"
+          }
+        }
+      },
+      "block_order": [
+        "image_item_8Kq4yw",
+        "image_item_HNzABm",
+        "image_item_6RTt7N"
+      ],
+      "settings": {
+        "color_scheme": "scheme-5",
+        "padding_top": 60,
+        "padding_bottom": 60,
+        "title": "Unsere Welten",
+        "heading_size": "h2",
+        "description": "Drei Rituale. Eine Philosophie. Pure Luxuspflege.",
+        "button": "",
+        "button_link": "",
+        "button2": "Alle Produkte",
+        "button_link2": "shopify://collections/aphoria-collection",
+        "color_scheme_item": "scheme-3"
+      }
+    },
     "aphoria_featured_collection_main": {
       "type": "aphoria-featured-collection",
       "settings": {
+        "bg_color": "#faf6f3",
+        "eyebrow_color": "#7c1d3c",
+        "heading_color": "#0a0205",
+        "card_title_color": "#0a0205",
+        "card_price_color": "#7c1d3c",
         "eyebrow": "Unsere Bestseller",
         "heading": "Die Kollektion",
         "collection": "aphoria-collection",
         "products_to_show": 4,
         "columns": 4,
-        "bg_color": "#faf6f3",
         "button_label": "Alle Produkte ansehen",
         "button_url": "shopify://collections/aphoria-collection"
+      }
+    },
+    "aphoria_testimonials_main": {
+      "type": "aphoria-testimonials",
+      "blocks": {
+        "review_1": {
+          "type": "review",
+          "settings": {
+            "rating": 5,
+            "quote": "Das Velvet Renewal Serum hat meine Haut vollständig transformiert. Nach nur zwei Wochen war mein Teint ebenmäßiger und leuchtender als je zuvor. Ein wahrhaftiges Luxuserlebnis.",
+            "name": "Sophie M.",
+            "subtitle": "München",
+            "product": "Velvet Renewal Serum"
+          }
+        },
+        "review_2": {
+          "type": "review",
+          "settings": {
+            "rating": 5,
+            "quote": "Der Hydra Veil Moisturizer ist einfach unglaublich — federleicht, tief hydratisierend und der Duft ist pure Eleganz. Ich werde nie wieder ein anderes Produkt verwenden.",
+            "name": "Isabelle K.",
+            "subtitle": "Hamburg",
+            "product": "Hydra Veil Moisturizer"
+          }
+        },
+        "review_3": {
+          "type": "review",
+          "settings": {
+            "rating": 5,
+            "quote": "Die Aphoria Signature Fragrance ist ein Kunstwerk. Komplex, langanhaltend und absolut einzigartig. Ich erhalte ständig Komplimente. Dieser Duft ist meine neue Signature.",
+            "name": "Madeleine R.",
+            "subtitle": "Berlin",
+            "product": "Aphoria Signature Fragrance"
+          }
+        }
+      },
+      "block_order": [
+        "review_1",
+        "review_2",
+        "review_3"
+      ],
+      "settings": {
+        "eyebrow": "Kundenstimmen",
+        "heading": "<p><em>Was unsere<br>Kunden sagen</em></p>"
       }
     },
     "aphoria_brand_story_main": {
@@ -75,6 +181,12 @@
         "value_3"
       ],
       "settings": {
+        "bg_color": "#0a0205",
+        "heading_color": "#f2d0c8",
+        "text_color": "#c8a09a",
+        "eyebrow_color": "#c9a57e",
+        "value_title_color": "#c9a57e",
+        "accent_color": "#7c1d3c",
         "eyebrow": "Unsere Geschichte",
         "heading": "<p><em>Schönheit,<br>neu definiert</em></p>",
         "text": "<p>APHORIA entstand aus der Überzeugung, dass Schönheitspflege ein Ritual sein sollte — ein Moment der reinen Verwöhnung. Jedes Produkt verbindet modernste Wissenschaft mit der Kraft natürlicher Inhaltsstoffe.</p>",
@@ -180,100 +292,6 @@
         "show_vendor": false,
         "show_rating": true,
         "enable_quick_add": true
-      }
-    },
-    "main_image_with_text_overlay_m4U7Aa": {
-      "type": "main-image-with-text-overlay",
-      "blocks": {
-        "image_item_8Kq4yw": {
-          "type": "image_item",
-          "settings": {
-            "title": "Hautpflege",
-            "des_bottom": "Seren, Feuchtigkeitspflege, Masken — modernste Formel für strahlende Haut.",
-            "link": "Entdecken",
-            "link_url": "shopify://collections/aphoria-collection"
-          }
-        },
-        "image_item_HNzABm": {
-          "type": "image_item",
-          "settings": {
-            "title": "Körperpflege",
-            "des_bottom": "Luxuriöse Körperpflegeprodukte für samtweiches, verwöhntes Hautgefühl.",
-            "link": "Entdecken",
-            "link_url": "shopify://collections/aphoria-collection"
-          }
-        },
-        "image_item_6RTt7N": {
-          "type": "image_item",
-          "settings": {
-            "title": "Düfte",
-            "des_bottom": "Komplexe Düfte, handgefertigt — ein Kunstwerk für die Sinne.",
-            "link": "Entdecken",
-            "link_url": "shopify://collections/aphoria-collection"
-          }
-        }
-      },
-      "block_order": [
-        "image_item_8Kq4yw",
-        "image_item_HNzABm",
-        "image_item_6RTt7N"
-      ],
-      "settings": {
-        "color_scheme": "scheme-5",
-        "padding_top": 60,
-        "padding_bottom": 60,
-        "title": "Unsere Welten",
-        "heading_size": "h2",
-        "description": "Drei Rituale. Eine Philosophie. Pure Luxuspflege.",
-        "button": "",
-        "button_link": "",
-        "button2": "Alle Produkte",
-        "button_link2": "shopify://collections/aphoria-collection",
-        "color_scheme_item": "scheme-3"
-      }
-    },
-    "aphoria_testimonials_main": {
-      "type": "aphoria-testimonials",
-      "blocks": {
-        "review_1": {
-          "type": "review",
-          "settings": {
-            "rating": 5,
-            "quote": "Das Velvet Renewal Serum hat meine Haut vollständig transformiert. Nach nur zwei Wochen war mein Teint ebenmäßiger und leuchtender als je zuvor. Ein wahrhaftiges Luxuserlebnis.",
-            "name": "Sophie M.",
-            "subtitle": "München",
-            "product": "Velvet Renewal Serum"
-          }
-        },
-        "review_2": {
-          "type": "review",
-          "settings": {
-            "rating": 5,
-            "quote": "Der Hydra Veil Moisturizer ist einfach unglaublich — federleicht, tief hydratisierend und der Duft ist pure Eleganz. Ich werde nie wieder ein anderes Produkt verwenden.",
-            "name": "Isabelle K.",
-            "subtitle": "Hamburg",
-            "product": "Hydra Veil Moisturizer"
-          }
-        },
-        "review_3": {
-          "type": "review",
-          "settings": {
-            "rating": 5,
-            "quote": "Die Aphoria Signature Fragrance ist ein Kunstwerk. Komplex, langanhaltend und absolut einzigartig. Ich erhalte ständig Komplimente. Dieser Duft ist meine neue Signature.",
-            "name": "Madeleine R.",
-            "subtitle": "Berlin",
-            "product": "Aphoria Signature Fragrance"
-          }
-        }
-      },
-      "block_order": [
-        "review_1",
-        "review_2",
-        "review_3"
-      ],
-      "settings": {
-        "eyebrow": "Kundenstimmen",
-        "heading": "<p><em>Was unsere<br>Kunden sagen</em></p>"
       }
     },
     "featured_blog_f4WB6C": {
