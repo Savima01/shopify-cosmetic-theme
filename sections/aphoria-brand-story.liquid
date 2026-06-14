@@ -1,0 +1,237 @@
+<section class="aphoria-bs" id="aphoria-bs-{{ section.id }}">
+  <div class="aphoria-bs__inner">
+
+    <div class="aphoria-bs__media">
+      {%- if section.settings.image != blank -%}
+        {{
+          section.settings.image
+          | image_url: width: 1200
+          | image_tag:
+            class: 'aphoria-bs__img',
+            loading: 'lazy',
+            widths: '400,600,800,1000,1200',
+            sizes: '(min-width: 990px) 50vw, 100vw'
+        }}
+      {%- else -%}
+        {{ 'lifestyle-2' | placeholder_svg_tag: 'aphoria-bs__placeholder' }}
+      {%- endif -%}
+      <div class="aphoria-bs__media-accent"></div>
+    </div>
+
+    <div class="aphoria-bs__content">
+      {%- if section.settings.eyebrow != blank -%}
+        <p class="aphoria-label aphoria-bs__eyebrow">{{ section.settings.eyebrow | escape }}</p>
+      {%- endif -%}
+
+      {%- if section.settings.heading != blank -%}
+        <h2 class="aphoria-heading aphoria-bs__heading">{{ section.settings.heading }}</h2>
+      {%- endif -%}
+
+      {%- if section.settings.text != blank -%}
+        <div class="aphoria-bs__text aphoria-body">{{ section.settings.text }}</div>
+      {%- endif -%}
+
+      <div class="aphoria-bs__values">
+        {%- for block in section.blocks -%}
+          <div class="aphoria-bs__value" {{ block.shopify_attributes }}>
+            <span class="aphoria-bs__value-icon">{{ block.settings.icon }}</span>
+            <div>
+              <p class="aphoria-bs__value-title">{{ block.settings.title | escape }}</p>
+              <p class="aphoria-bs__value-desc">{{ block.settings.description | escape }}</p>
+            </div>
+          </div>
+        {%- endfor -%}
+      </div>
+
+      {%- if section.settings.button_label != blank -%}
+        <a href="{{ section.settings.button_url | default: '/pages/about' }}" class="aphoria-btn aphoria-btn--primary">
+          {{ section.settings.button_label | escape }}
+        </a>
+      {%- endif -%}
+    </div>
+
+  </div>
+</section>
+
+{% stylesheet %}
+.aphoria-bs {
+  background: #0A0205;
+  overflow: hidden;
+}
+
+.aphoria-bs__inner {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  min-height: 680px;
+}
+
+@media (max-width: 989px) {
+  .aphoria-bs__inner { grid-template-columns: 1fr; }
+}
+
+.aphoria-bs__media {
+  position: relative;
+  overflow: hidden;
+}
+
+.aphoria-bs__img,
+.aphoria-bs__placeholder {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.aphoria-bs__media-accent {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(135deg, rgba(124,29,60,0.3) 0%, transparent 60%);
+  pointer-events: none;
+}
+
+@media (max-width: 989px) {
+  .aphoria-bs__media { min-height: 360px; }
+}
+
+.aphoria-bs__content {
+  padding: clamp(48px, 8vw, 100px) clamp(32px, 6vw, 80px);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 24px;
+}
+
+.aphoria-bs__eyebrow {
+  color: #C9A57E;
+}
+
+.aphoria-bs__heading {
+  font-size: clamp(28px, 3.5vw, 48px);
+  color: #F2D0C8;
+  line-height: 1.1;
+}
+
+.aphoria-bs__text {
+  color: rgba(242, 208, 200, 0.75);
+  font-size: clamp(14px, 1.3vw, 16px);
+  line-height: 1.8;
+  max-width: 480px;
+}
+
+.aphoria-bs__values {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  margin: 8px 0;
+}
+
+.aphoria-bs__value {
+  display: flex;
+  align-items: flex-start;
+  gap: 16px;
+}
+
+.aphoria-bs__value-icon {
+  font-size: 22px;
+  line-height: 1;
+  flex-shrink: 0;
+  margin-top: 2px;
+}
+
+.aphoria-bs__value-title {
+  font-family: 'Bodoni Moda', Georgia, serif;
+  font-size: 15px;
+  color: #C9A57E;
+  margin-bottom: 2px;
+}
+
+.aphoria-bs__value-desc {
+  font-size: 13px;
+  color: rgba(242, 208, 200, 0.6);
+  line-height: 1.5;
+}
+{% endstylesheet %}
+
+{% schema %}
+{
+  "name": "Aphoria Markengeschichte",
+  "tag": "section",
+  "class": "section",
+  "settings": [
+    {
+      "type": "image_picker",
+      "id": "image",
+      "label": "Bild"
+    },
+    {
+      "type": "text",
+      "id": "eyebrow",
+      "label": "Eyebrow-Text",
+      "default": "Unsere Geschichte"
+    },
+    {
+      "type": "richtext",
+      "id": "heading",
+      "label": "Überschrift",
+      "default": "<p><em>Schönheit,<br>neu definiert</em></p>"
+    },
+    {
+      "type": "richtext",
+      "id": "text",
+      "label": "Text",
+      "default": "<p>APHORIA entstand aus der Überzeugung, dass Schönheitspflege ein Ritual sein sollte — ein Moment der reinen Verwöhnung. Jedes Produkt verbindet modernste Wissenschaft mit der Kraft natürlicher Inhaltsstoffe.</p>"
+    },
+    {
+      "type": "text",
+      "id": "button_label",
+      "label": "Button Text",
+      "default": "Unsere Philosophie"
+    },
+    {
+      "type": "url",
+      "id": "button_url",
+      "label": "Button Link"
+    }
+  ],
+  "blocks": [
+    {
+      "type": "value",
+      "name": "Markenwert",
+      "settings": [
+        {
+          "type": "text",
+          "id": "icon",
+          "label": "Emoji / Icon",
+          "default": "✦"
+        },
+        {
+          "type": "text",
+          "id": "title",
+          "label": "Titel",
+          "default": "Reine Inhaltsstoffe"
+        },
+        {
+          "type": "text",
+          "id": "description",
+          "label": "Beschreibung",
+          "default": "Nur das Beste aus der Natur, sorgfältig ausgewählt."
+        }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "Aphoria Markengeschichte",
+      "settings": {
+        "eyebrow": "Unsere Geschichte",
+        "button_label": "Unsere Philosophie"
+      },
+      "blocks": [
+        { "type": "value", "settings": { "icon": "✦", "title": "Reine Inhaltsstoffe", "description": "Nur das Beste aus der Natur, sorgfältig ausgewählt." } },
+        { "type": "value", "settings": { "icon": "◈", "title": "Wissenschaft & Ritual", "description": "Modernste Forschung trifft auf jahrtausendealte Weisheit." } },
+        { "type": "value", "settings": { "icon": "❋", "title": "Nachhaltig & Clean", "description": "Vegan, tierversuchsfrei und umweltbewusst produziert." } }
+      ]
+    }
+  ]
+}
+{% endschema %}
