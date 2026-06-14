@@ -34,7 +34,7 @@
       "settings": {
         "eyebrow": "Unsere Bestseller",
         "heading": "Die Kollektion",
-        "collection": "",
+        "collection": "aphoria-collection",
         "products_to_show": 4,
         "columns": 4,
         "bg_color": "#faf6f3",
