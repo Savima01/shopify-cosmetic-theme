@@ -2,8 +2,20 @@
   #aphoria-bs-{{ section.id }} {
     background: {{ section.settings.bg_color }};
   }
-  #aphoria-bs-{{ section.id }} .aphoria-bs__heading {
+  #aphoria-bs-{{ section.id }} .aphoria-bs__heading,
+  #aphoria-bs-{{ section.id }} .aphoria-bs__heading p,
+  #aphoria-bs-{{ section.id }} .aphoria-bs__heading h1,
+  #aphoria-bs-{{ section.id }} .aphoria-bs__heading h2,
+  #aphoria-bs-{{ section.id }} .aphoria-bs__heading h3,
+  #aphoria-bs-{{ section.id }} .aphoria-bs__heading em,
+  #aphoria-bs-{{ section.id }} .aphoria-bs__heading strong {
     color: {{ section.settings.heading_color }};
+    font-family: var(--font-heading-family);
+    font-style: italic;
+    font-size: var(--aphoria-h2);
+    font-weight: 400;
+    line-height: 1.1;
+    letter-spacing: 0;
   }
   #aphoria-bs-{{ section.id }} .aphoria-bs__text {
     color: {{ section.settings.text_color }};
@@ -255,7 +267,8 @@
       "type": "richtext",
       "id": "heading",
       "label": "Headline",
-      "default": "<p><em>Beauty,<br>redefined</em></p>"
+      "default": "<p><em>Beauty,<br>redefined</em></p>",
+      "info": "Größe unter Theme-Einstellungen → Typografie → H2-Größe anpassen"
     },
     {
       "type": "richtext",
