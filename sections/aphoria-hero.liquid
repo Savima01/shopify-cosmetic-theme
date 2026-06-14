@@ -12,6 +12,14 @@
     --hero-text-color:       {{ section.settings.text_color }};
     --hero-vertical-align:   {{ section.settings.content_position }};
     --hero-padding-top:      {{ section.settings.content_offset }}px;
+    --hero-heading-size:     {{ section.settings.heading_size }}px;
+  }
+  #aphoria-hero-{{ section.id }} .aphoria-hero__heading,
+  #aphoria-hero-{{ section.id }} .aphoria-hero__heading p,
+  #aphoria-hero-{{ section.id }} .aphoria-hero__heading em,
+  #aphoria-hero-{{ section.id }} .aphoria-hero__heading strong {
+    font-family: var(--font-heading-family);
+    font-style: italic;
   }
   #aphoria-hero-{{ section.id }} .aphoria-hero__overlay {
     background: linear-gradient(
@@ -202,7 +210,7 @@
 }
 
 .aphoria-hero__heading {
-  font-size: clamp(42px, 7vw, 96px);
+  font-size: var(--hero-heading-size, 72px);
   color: var(--hero-text-color, #F2D0C8);
   margin-bottom: 24px;
   line-height: 1.0;
@@ -400,6 +408,16 @@
       "default": 140,
       "unit": "px",
       "info": "Abstand des Textes vom oberen Rand (inkl. Header)"
+    },
+    {
+      "type": "range",
+      "id": "heading_size",
+      "label": "Überschrift Größe (px)",
+      "min": 30,
+      "max": 120,
+      "step": 2,
+      "default": 72,
+      "unit": "px"
     },
     {
       "type": "color",
