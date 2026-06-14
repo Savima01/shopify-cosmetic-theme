@@ -1,7 +1,19 @@
 {%- style -%}
   #aphoria-fc-{{ section.id }} {
-    --fc-bg: {{ section.settings.bg_color }};
+    background: {{ section.settings.bg_color }};
     --fc-cols: {{ section.settings.columns }};
+  }
+  #aphoria-fc-{{ section.id }} .aphoria-fc__eyebrow {
+    color: {{ section.settings.eyebrow_color }};
+  }
+  #aphoria-fc-{{ section.id }} .aphoria-fc__heading {
+    color: {{ section.settings.heading_color }};
+  }
+  #aphoria-fc-{{ section.id }} .aphoria-fc__card-title {
+    color: {{ section.settings.card_title_color }};
+  }
+  #aphoria-fc-{{ section.id }} .aphoria-fc__card-price {
+    color: {{ section.settings.card_price_color }};
   }
 {%- endstyle -%}
 
@@ -64,12 +76,11 @@
 
 {% stylesheet %}
 .aphoria-fc {
-  background: var(--fc-bg, var(--aphoria-ivory));
+  background: #FAF6F3;
   padding: clamp(60px, 8vw, 120px) 0;
 }
 
 .aphoria-fc__eyebrow {
-  color: var(--aphoria-bordeaux);
   margin-bottom: 12px;
   text-align: center;
   font-size: var(--aphoria-label-sz);
@@ -81,7 +92,6 @@
   font-family: 'Bodoni Moda', Georgia, serif;
   font-style: italic;
   font-weight: 400;
-  color: var(--aphoria-noir);
   text-align: center;
   margin-bottom: clamp(40px, 6vw, 72px);
   line-height: 1.1;
@@ -162,7 +172,6 @@
   font-size: var(--aphoria-h3);
   font-weight: 400;
   font-style: italic;
-  color: var(--aphoria-noir);
   margin-bottom: 8px;
   line-height: 1.25;
 }
@@ -172,7 +181,6 @@
   font-size: 13px;
   font-weight: 500;
   letter-spacing: 0.06em;
-  color: var(--aphoria-bordeaux);
 }
 
 .aphoria-fc__cta {
@@ -187,6 +195,44 @@
   "tag": "section",
   "class": "section",
   "settings": [
+    {
+      "type": "header",
+      "content": "Farben"
+    },
+    {
+      "type": "color",
+      "id": "bg_color",
+      "label": "Hintergrundfarbe",
+      "default": "#FAF6F3"
+    },
+    {
+      "type": "color",
+      "id": "eyebrow_color",
+      "label": "Eyebrow-Farbe",
+      "default": "#7C1D3C"
+    },
+    {
+      "type": "color",
+      "id": "heading_color",
+      "label": "Überschrift-Farbe",
+      "default": "#0A0205"
+    },
+    {
+      "type": "color",
+      "id": "card_title_color",
+      "label": "Produkt-Titel Farbe",
+      "default": "#0A0205"
+    },
+    {
+      "type": "color",
+      "id": "card_price_color",
+      "label": "Preis-Farbe",
+      "default": "#7C1D3C"
+    },
+    {
+      "type": "header",
+      "content": "Inhalt"
+    },
     {
       "type": "text",
       "id": "eyebrow",
@@ -221,12 +267,6 @@
       "max": 4,
       "step": 1,
       "default": 4
-    },
-    {
-      "type": "color",
-      "id": "bg_color",
-      "label": "Background Color",
-      "default": "#FAF6F3"
     },
     {
       "type": "text",
