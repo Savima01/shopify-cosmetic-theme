@@ -18,6 +18,7 @@
     "type_base_size": 16,
     "type_body_font": "montserrat_n4",
     "body_scale": 100,
+    "aphoria_h1_size": 78,
     "page_width": 1600,
     "spacing_sections": 0,
     "spacing_grid_horizontal": 20,
