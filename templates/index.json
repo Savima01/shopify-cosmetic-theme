@@ -20,7 +20,7 @@
         "overlay_tint": "#7c1d3c",
         "overlay_tint_opacity": 20,
         "eyebrow": "Luxus Beauty · APHORIA",
-        "heading": "<p><em>The Art of<br/>Pure Beauty</em></p>",
+        "heading": "<h1><em>The Art of<br/>Pure Beauty</em></h1>",
         "subheading": "Wissenschaft trifft Ritual — entwickelt für anspruchsvolle Haut.",
         "content_alignment": "left",
         "content_position": "flex-start",
