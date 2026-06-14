@@ -57,7 +57,7 @@
       "settings": {
         "color_scheme": "scheme-1",
         "color_scheme_1": "scheme-1",
-        "logo_position": "top-center",
+        "logo_position": "middle-center",
         "enable-header-wishlist": true,
         "menu": "main-menu",
         "menu_type_desktop": "mega",
@@ -68,7 +68,7 @@
         "mobile_logo_position": "center",
         "margin_bottom": 0,
         "padding_top": 20,
-        "padding_bottom": 0,
+        "padding_bottom": 20,
         "enable_megamenu": false
       }
     }
