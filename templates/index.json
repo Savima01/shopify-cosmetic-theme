@@ -12,7 +12,7 @@
     "aphoria_hero_main": {
       "type": "aphoria-hero",
       "settings": {
-        "image": "shopify://shop_images/velvet_renewal_serum.jpg",
+        "image": "shopify://shop_images/aphoria-hero-velvet-serum.jpg",
         "video": "",
         "height_mobile": 700,
         "height_desktop": 900,
