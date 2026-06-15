@@ -1,0 +1,139 @@
+{%- style -%}
+  .aphoria-lkbanner {
+    background: {{ section.settings.bg_color }};
+    padding: {{ section.settings.padding }}px 0;
+    overflow: hidden;
+    white-space: nowrap;
+  }
+
+  .aphoria-lkbanner__track {
+    display: inline-flex;
+    gap: {{ section.settings.gap }}px;
+    animation: aphoria-scroll {{ section.settings.speed }}s linear infinite;
+  }
+
+  .aphoria-lkbanner:hover .aphoria-lkbanner__track {
+    animation-play-state: paused;
+  }
+
+  @keyframes aphoria-scroll {
+    from { transform: translateX(0); }
+    to   { transform: translateX(-50%); }
+  }
+
+  .aphoria-lkbanner__item {
+    display: inline-flex;
+    align-items: center;
+    gap: {{ section.settings.gap }}px;
+    font-family: var(--font-heading-family);
+    font-style: italic;
+    font-weight: 400;
+    font-size: {{ section.settings.font_size }}px;
+    color: {{ section.settings.text_color }};
+    white-space: nowrap;
+  }
+
+  .aphoria-lkbanner__dot {
+    display: inline-block;
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+    background: {{ section.settings.dot_color }};
+    flex-shrink: 0;
+  }
+{%- endstyle -%}
+
+{%- assign items = section.settings.text | split: '|' -%}
+{%- assign repeat = 8 -%}
+
+<div class="aphoria-lkbanner">
+  <div class="aphoria-lkbanner__track">
+    {%- for i in (1..2) -%}
+      {%- for item in items -%}
+        <span class="aphoria-lkbanner__item">
+          {{ item | strip }}
+          <span class="aphoria-lkbanner__dot"></span>
+        </span>
+      {%- endfor -%}
+    {%- endfor -%}
+  </div>
+</div>
+
+{% schema %}
+{
+  "name": "Lookbook Scrolling Banner",
+  "tag": "section",
+  "class": "section",
+  "settings": [
+    {
+      "type": "textarea",
+      "id": "text",
+      "label": "Texte (mit | trennen)",
+      "default": "Morning Ritual | Pure Beauty | Wissenschaft trifft Natur | Luxury Skincare | APHORIA"
+    },
+    {
+      "type": "range",
+      "id": "font_size",
+      "label": "Schriftgröße (px)",
+      "min": 14,
+      "max": 48,
+      "step": 2,
+      "default": 24
+    },
+    {
+      "type": "range",
+      "id": "speed",
+      "label": "Geschwindigkeit (Sek. pro Umlauf)",
+      "min": 10,
+      "max": 60,
+      "step": 5,
+      "default": 25
+    },
+    {
+      "type": "range",
+      "id": "gap",
+      "label": "Abstand zwischen Elementen (px)",
+      "min": 20,
+      "max": 80,
+      "step": 5,
+      "default": 40
+    },
+    {
+      "type": "range",
+      "id": "padding",
+      "label": "Innenabstand oben/unten (px)",
+      "min": 8,
+      "max": 48,
+      "step": 4,
+      "default": 20
+    },
+    {
+      "type": "header",
+      "content": "Farben"
+    },
+    {
+      "type": "color",
+      "id": "bg_color",
+      "label": "Hintergrundfarbe",
+      "default": "#7C1D3C"
+    },
+    {
+      "type": "color",
+      "id": "text_color",
+      "label": "Textfarbe",
+      "default": "#F2D0C8"
+    },
+    {
+      "type": "color",
+      "id": "dot_color",
+      "label": "Punkt-Farbe",
+      "default": "#C9A57E"
+    }
+  ],
+  "presets": [
+    {
+      "name": "Lookbook Scrolling Banner"
+    }
+  ]
+}
+{% endschema %}

@@ -1,0 +1,134 @@
+{%- style -%}
+  .aphoria-fullwidth {
+    position: relative;
+    width: 100%;
+    height: {{ section.settings.height_mobile }}px;
+    overflow: hidden;
+  }
+
+  @media screen and (min-width: 750px) {
+    .aphoria-fullwidth {
+      height: {{ section.settings.height_desktop }}px;
+    }
+  }
+
+  .aphoria-fullwidth__img {
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: {{ section.settings.focal_point }};
+  }
+
+  .aphoria-fullwidth__overlay {
+    position: absolute;
+    inset: 0;
+    background: rgba(0,0,0,{{ section.settings.overlay_opacity | divided_by: 100.0 }});
+  }
+
+  .aphoria-fullwidth__caption {
+    position: absolute;
+    bottom: 3rem;
+    left: 50%;
+    transform: translateX(-50%);
+    font-family: var(--font-body-family);
+    font-size: 10px;
+    font-weight: 600;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+    color: {{ section.settings.caption_color }};
+    white-space: nowrap;
+  }
+{%- endstyle -%}
+
+<div class="aphoria-fullwidth">
+  {%- if section.settings.image != blank -%}
+    <img
+      class="aphoria-fullwidth__img"
+      src="{{ section.settings.image | image_url: width: 2400 }}"
+      alt="{{ section.settings.image.alt | escape }}"
+      loading="lazy"
+    >
+  {%- else -%}
+    <div class="aphoria-fullwidth__img" style="background: #0A0205;"></div>
+  {%- endif -%}
+
+  <div class="aphoria-fullwidth__overlay"></div>
+
+  {%- if section.settings.caption != blank -%}
+    <p class="aphoria-fullwidth__caption">{{ section.settings.caption }}</p>
+  {%- endif -%}
+</div>
+
+{% schema %}
+{
+  "name": "Lookbook Fullwidth Bild",
+  "tag": "section",
+  "class": "section",
+  "settings": [
+    {
+      "type": "image_picker",
+      "id": "image",
+      "label": "Bild"
+    },
+    {
+      "type": "select",
+      "id": "focal_point",
+      "label": "Bildausschnitt",
+      "options": [
+        { "value": "center center", "label": "Mitte" },
+        { "value": "top center", "label": "Oben" },
+        { "value": "bottom center", "label": "Unten" },
+        { "value": "center left", "label": "Links" },
+        { "value": "center right", "label": "Rechts" }
+      ],
+      "default": "center center"
+    },
+    {
+      "type": "range",
+      "id": "height_desktop",
+      "label": "Höhe Desktop (px)",
+      "min": 300,
+      "max": 900,
+      "step": 50,
+      "default": 600
+    },
+    {
+      "type": "range",
+      "id": "height_mobile",
+      "label": "Höhe Mobile (px)",
+      "min": 200,
+      "max": 600,
+      "step": 50,
+      "default": 400
+    },
+    {
+      "type": "range",
+      "id": "overlay_opacity",
+      "label": "Overlay-Dunkelheit (%)",
+      "min": 0,
+      "max": 70,
+      "step": 5,
+      "default": 10
+    },
+    {
+      "type": "text",
+      "id": "caption",
+      "label": "Caption (optional)",
+      "default": "APHORIA · Luxury Beauty"
+    },
+    {
+      "type": "color",
+      "id": "caption_color",
+      "label": "Caption-Farbe",
+      "default": "#FAF6F3"
+    }
+  ],
+  "presets": [
+    {
+      "name": "Lookbook Fullwidth Bild"
+    }
+  ]
+}
+{% endschema %}
