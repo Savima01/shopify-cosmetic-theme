@@ -1,0 +1,255 @@
+{%- style -%}
+  .aphoria-inlinetext {
+    padding-top: {{ section.settings.padding_top }}px;
+    padding-bottom: {{ section.settings.padding_bottom }}px;
+    background: {{ section.settings.bg_color }};
+  }
+
+  .aphoria-inlinetext__inner {
+    max-width: {{ section.settings.max_width }}px;
+    margin: 0 auto;
+    padding: 0 2rem;
+  }
+
+  .aphoria-inlinetext__line {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 1.2rem;
+    line-height: 1.15;
+    margin-bottom: 1.2rem;
+  }
+
+  .aphoria-inlinetext__line:last-child {
+    margin-bottom: 0;
+  }
+
+  .aphoria-inlinetext__text {
+    font-family: var(--font-heading-family);
+    font-style: italic;
+    font-weight: 400;
+    font-size: {{ section.settings.font_size }}px;
+    color: {{ section.settings.text_color }};
+    line-height: 1.1;
+  }
+
+  @media screen and (max-width: 749px) {
+    .aphoria-inlinetext__text {
+      font-size: {{ section.settings.font_size | times: 0.6 | round: 0 }}px;
+    }
+  }
+
+  @media screen and (min-width: 750px) and (max-width: 1024px) {
+    .aphoria-inlinetext__text {
+      font-size: {{ section.settings.font_size | times: 0.78 | round: 0 }}px;
+    }
+  }
+
+  .aphoria-inlinetext__pill {
+    display: inline-block;
+    width: {{ section.settings.pill_width }}px;
+    height: {{ section.settings.pill_height }}px;
+    border-radius: 999px;
+    overflow: hidden;
+    flex-shrink: 0;
+    vertical-align: middle;
+  }
+
+  @media screen and (max-width: 749px) {
+    .aphoria-inlinetext__pill {
+      width: {{ section.settings.pill_width | times: 0.6 | round: 0 }}px;
+      height: {{ section.settings.pill_height | times: 0.6 | round: 0 }}px;
+    }
+  }
+
+  .aphoria-inlinetext__pill img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+  }
+
+  .aphoria-inlinetext__pill-placeholder {
+    width: 100%;
+    height: 100%;
+    background: {{ section.settings.pill_placeholder_color }};
+  }
+{%- endstyle -%}
+
+<div class="aphoria-inlinetext">
+  <div class="aphoria-inlinetext__inner">
+    {%- for block in section.blocks -%}
+      <div class="aphoria-inlinetext__line" {{ block.shopify_attributes }}>
+
+        {%- if block.settings.text_before != blank -%}
+          <span class="aphoria-inlinetext__text">{{ block.settings.text_before }}</span>
+        {%- endif -%}
+
+        {%- if block.settings.image != blank -%}
+          <span class="aphoria-inlinetext__pill">
+            <img
+              src="{{ block.settings.image | image_url: width: 400 }}"
+              alt="{{ block.settings.image.alt | escape }}"
+              loading="lazy"
+              width="{{ section.settings.pill_width }}"
+              height="{{ section.settings.pill_height }}"
+            >
+          </span>
+        {%- elsif block.settings.text_before != blank or block.settings.text_after != blank -%}
+          <span class="aphoria-inlinetext__pill">
+            <div class="aphoria-inlinetext__pill-placeholder"></div>
+          </span>
+        {%- endif -%}
+
+        {%- if block.settings.text_after != blank -%}
+          <span class="aphoria-inlinetext__text">{{ block.settings.text_after }}</span>
+        {%- endif -%}
+
+      </div>
+    {%- endfor -%}
+  </div>
+</div>
+
+{% schema %}
+{
+  "name": "Lookbook Inline-Text",
+  "tag": "section",
+  "class": "section",
+  "max_blocks": 6,
+  "settings": [
+    {
+      "type": "header",
+      "content": "Layout"
+    },
+    {
+      "type": "range",
+      "id": "max_width",
+      "label": "Maximale Breite (px)",
+      "min": 600,
+      "max": 1400,
+      "step": 50,
+      "default": 1100
+    },
+    {
+      "type": "range",
+      "id": "font_size",
+      "label": "Schriftgröße (px)",
+      "min": 32,
+      "max": 100,
+      "step": 2,
+      "default": 64
+    },
+    {
+      "type": "range",
+      "id": "pill_width",
+      "label": "Bild-Breite (px)",
+      "min": 80,
+      "max": 300,
+      "step": 10,
+      "default": 180
+    },
+    {
+      "type": "range",
+      "id": "pill_height",
+      "label": "Bild-Höhe (px)",
+      "min": 50,
+      "max": 180,
+      "step": 5,
+      "default": 90
+    },
+    {
+      "type": "range",
+      "id": "padding_top",
+      "label": "Abstand oben (px)",
+      "min": 0,
+      "max": 120,
+      "step": 8,
+      "default": 80
+    },
+    {
+      "type": "range",
+      "id": "padding_bottom",
+      "label": "Abstand unten (px)",
+      "min": 0,
+      "max": 120,
+      "step": 8,
+      "default": 80
+    },
+    {
+      "type": "header",
+      "content": "Farben"
+    },
+    {
+      "type": "color",
+      "id": "bg_color",
+      "label": "Hintergrundfarbe",
+      "default": "#FAF6F3"
+    },
+    {
+      "type": "color",
+      "id": "text_color",
+      "label": "Textfarbe",
+      "default": "#0A0205"
+    },
+    {
+      "type": "color",
+      "id": "pill_placeholder_color",
+      "label": "Bild-Platzhalter Farbe",
+      "default": "#F2D0C8"
+    }
+  ],
+  "blocks": [
+    {
+      "type": "line",
+      "name": "Textzeile",
+      "settings": [
+        {
+          "type": "text",
+          "id": "text_before",
+          "label": "Text vor dem Bild",
+          "default": "Schönheit ist"
+        },
+        {
+          "type": "image_picker",
+          "id": "image",
+          "label": "Bild (oval)"
+        },
+        {
+          "type": "text",
+          "id": "text_after",
+          "label": "Text nach dem Bild",
+          "default": "ein Ritual"
+        }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "Lookbook Inline-Text",
+      "blocks": [
+        {
+          "type": "line",
+          "settings": {
+            "text_before": "Schönheit ist",
+            "text_after": "ein Ritual —"
+          }
+        },
+        {
+          "type": "line",
+          "settings": {
+            "text_before": "pure Pflege",
+            "text_after": "und Genuss"
+          }
+        },
+        {
+          "type": "line",
+          "settings": {
+            "text_before": "für anspruchsvolle",
+            "text_after": "Haut."
+          }
+        }
+      ]
+    }
+  ]
+}
+{% endschema %}

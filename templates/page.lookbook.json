@@ -24,9 +24,48 @@
         "button_bg": "#FAF6F3",
         "button_text": "#0A0205"
       }
+    },
+    "aphoria_lookbook_inlinetext": {
+      "type": "aphoria-lookbook-inlinetext",
+      "blocks": {
+        "line_1": {
+          "type": "line",
+          "settings": {
+            "text_before": "Schönheit ist",
+            "text_after": "ein Ritual —"
+          }
+        },
+        "line_2": {
+          "type": "line",
+          "settings": {
+            "text_before": "pure Pflege",
+            "text_after": "und Genuss"
+          }
+        },
+        "line_3": {
+          "type": "line",
+          "settings": {
+            "text_before": "für anspruchsvolle",
+            "text_after": "Haut."
+          }
+        }
+      },
+      "block_order": ["line_1", "line_2", "line_3"],
+      "settings": {
+        "bg_color": "#FAF6F3",
+        "text_color": "#0A0205",
+        "font_size": 64,
+        "pill_width": 180,
+        "pill_height": 90,
+        "max_width": 1100,
+        "padding_top": 80,
+        "padding_bottom": 80,
+        "pill_placeholder_color": "#F2D0C8"
+      }
     }
   },
   "order": [
-    "aphoria_lookbook_hero"
+    "aphoria_lookbook_hero",
+    "aphoria_lookbook_inlinetext"
   ]
 }
