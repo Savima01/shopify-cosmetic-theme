@@ -63,13 +63,83 @@
         "pill_placeholder_color": "#F2D0C8"
       }
     },
-    "aphoria_lookbook_split": {
+    "aphoria_lookbook_split_1": {
       "type": "aphoria-lookbook-split",
       "settings": {
-        "eyebrow": "Unsere Kollektion",
-        "heading": "Hautpflege Ritual",
+        "eyebrow": "Morning Ritual",
+        "heading": "Dein Morgen. Dein Ritual.",
         "heading_size": 40,
-        "subtext": "Entdecke unsere Bestseller — sorgfältig entwickelt für anspruchsvolle Haut.",
+        "subtext": "Beginne den Tag mit dem Velvet Renewal Serum — für sichtbar strahlende Haut ab der ersten Anwendung.",
+        "collection": "aphoria-collection",
+        "products_to_show": 2,
+        "show_vendor": false,
+        "image_side": "left",
+        "image_ratio": "3/4",
+        "image_radius": 16,
+        "gap": 60,
+        "padding_top": 80,
+        "padding_bottom": 40,
+        "bg_color": "#FAF6F3",
+        "text_color": "#0A0205",
+        "accent_color": "#7C1D3C",
+        "card_bg": "#F2D0C8",
+        "placeholder_color": "#F2D0C8"
+      }
+    },
+    "aphoria_lookbook_banner_1": {
+      "type": "aphoria-lookbook-banner",
+      "settings": {
+        "text": "Morning Ritual | Pure Ingredients | Wissenschaft trifft Natur | Luxury Skincare | APHORIA",
+        "font_size": 22,
+        "speed": 25,
+        "gap": 40,
+        "padding": 20,
+        "bg_color": "#7C1D3C",
+        "text_color": "#F2D0C8",
+        "dot_color": "#C9A57E"
+      }
+    },
+    "aphoria_lookbook_split_2": {
+      "type": "aphoria-lookbook-split",
+      "settings": {
+        "eyebrow": "Glow Skin",
+        "heading": "Leuchtkraft, die bleibt.",
+        "heading_size": 40,
+        "subtext": "Die Rose Enzyme Glow Mask verfeinert die Poren und schenkt deiner Haut sofortigen Glow — sichtbar nach der ersten Anwendung.",
+        "collection": "aphoria-collection",
+        "products_to_show": 2,
+        "show_vendor": false,
+        "image_side": "right",
+        "image_ratio": "3/4",
+        "image_radius": 16,
+        "gap": 60,
+        "padding_top": 80,
+        "padding_bottom": 40,
+        "bg_color": "#0A0205",
+        "text_color": "#FAF6F3",
+        "accent_color": "#C9A57E",
+        "card_bg": "#1a1a1a",
+        "placeholder_color": "#1a1a1a"
+      }
+    },
+    "aphoria_lookbook_fullwidth": {
+      "type": "aphoria-lookbook-fullwidth",
+      "settings": {
+        "height_desktop": 600,
+        "height_mobile": 400,
+        "overlay_opacity": 15,
+        "caption": "APHORIA · The Art of Pure Beauty",
+        "caption_color": "#FAF6F3",
+        "focal_point": "center center"
+      }
+    },
+    "aphoria_lookbook_split_3": {
+      "type": "aphoria-lookbook-split",
+      "settings": {
+        "eyebrow": "Signature Scent",
+        "heading": "Ein Duft wie ein Kunstwerk.",
+        "heading_size": 40,
+        "subtext": "Die APHORIA Signature Fragrance — komplex, langanhaltend und absolut einzigartig. Dein neuer Signature-Duft.",
         "collection": "aphoria-collection",
         "products_to_show": 2,
         "show_vendor": false,
@@ -85,11 +155,84 @@
         "card_bg": "#F2D0C8",
         "placeholder_color": "#F2D0C8"
       }
+    },
+    "aphoria_lookbook_banner_2": {
+      "type": "aphoria-lookbook-banner",
+      "settings": {
+        "text": "Shop the Look | Entdecke die Kollektion | Vegan & Clean | Cruelty-Free | APHORIA",
+        "font_size": 22,
+        "speed": 30,
+        "gap": 40,
+        "padding": 20,
+        "bg_color": "#C9A57E",
+        "text_color": "#0A0205",
+        "dot_color": "#7C1D3C"
+      }
+    },
+    "aphoria_lookbook_hotspot": {
+      "type": "aphoria-lookbook-hotspot",
+      "blocks": {
+        "pin_1": {
+          "type": "hotspot",
+          "settings": {
+            "pos_x": 25,
+            "pos_y": 40
+          }
+        },
+        "pin_2": {
+          "type": "hotspot",
+          "settings": {
+            "pos_x": 65,
+            "pos_y": 55
+          }
+        }
+      },
+      "block_order": ["pin_1", "pin_2"],
+      "settings": {
+        "eyebrow": "Shop the Look",
+        "heading": "Entdecke den Look",
+        "heading_size": 36,
+        "radius": 16,
+        "padding_top": 80,
+        "padding_bottom": 80,
+        "bg_color": "#0A0205",
+        "text_color": "#FAF6F3",
+        "accent_color": "#C9A57E",
+        "pin_color": "#7C1D3C",
+        "placeholder_color": "#1a1a1a"
+      }
+    },
+    "aphoria_lookbook_cta": {
+      "type": "aphoria-lookbook-cta",
+      "settings": {
+        "eyebrow": "Bereit für dein Ritual?",
+        "heading": "Die Kollektion entdecken",
+        "heading_size": 44,
+        "subtext": "Alle APHORIA-Produkte vereinen modernste Wissenschaft mit der Kraft reiner Natur.",
+        "btn1_label": "Jetzt shoppen",
+        "btn1_url": "shopify://collections/aphoria-collection",
+        "btn2_label": "Unsere Geschichte",
+        "btn2_url": "shopify://pages/about",
+        "padding_top": 96,
+        "padding_bottom": 96,
+        "bg_color": "#0A0205",
+        "text_color": "#FAF6F3",
+        "accent_color": "#C9A57E",
+        "btn_primary_bg": "#7C1D3C",
+        "btn_primary_text": "#FAF6F3"
+      }
     }
   },
   "order": [
     "aphoria_lookbook_hero",
     "aphoria_lookbook_inlinetext",
-    "aphoria_lookbook_split"
+    "aphoria_lookbook_split_1",
+    "aphoria_lookbook_banner_1",
+    "aphoria_lookbook_split_2",
+    "aphoria_lookbook_fullwidth",
+    "aphoria_lookbook_split_3",
+    "aphoria_lookbook_banner_2",
+    "aphoria_lookbook_hotspot",
+    "aphoria_lookbook_cta"
   ]
 }
