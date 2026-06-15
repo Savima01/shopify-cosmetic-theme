@@ -69,6 +69,7 @@
         "image_item_HNzABm",
         "image_item_6RTt7N"
       ],
+      "name": "Kategorie-Grid",
       "settings": {
         "color_scheme": "scheme-5",
         "columns_desktop": 3,
@@ -237,6 +238,7 @@
         "icon_item_kf4CiF",
         "icon_item_hQdqMB"
       ],
+      "name": "USP Leiste",
       "settings": {
         "color_scheme": "scheme-5",
         "section_layout": "layout_1",
