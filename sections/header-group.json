@@ -72,10 +72,13 @@
           "type": "style_4",
           "settings": {
             "megamenu_items_4": "Catalog",
-            "link_banner_image_4_1": "",
+            "banner_image_4_1": "shopify://shop_images/hydra-veil-moisturizer_d682e7e1-5b7d-42b3-8c21-1b7266e177f5.webp",
+            "link_banner_image_4_1": "shopify://collections/aphoria-collection",
             "title_featured_product_4": "Top Rated",
-            "collection_4": "",
+            "collection_4": "aphoria-collection",
+            "banner_image_4_2": "shopify://shop_images/b-studio-beauty-portrait.webp",
             "link_banner_image_4_2": "",
+            "banner_image_4_3": "shopify://shop_images/a-ultra-premium-skincare.webp",
             "link_banner_image_4_3": ""
           }
         },
