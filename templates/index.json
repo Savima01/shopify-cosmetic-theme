@@ -280,7 +280,7 @@
         "padding_top": 10,
         "padding_bottom": 40,
         "title": "Neu bei APHORIA",
-        "heading_size": "h2",
+        "heading_size": "h0",
         "description": "<p>Entdecke unsere neuesten Ritualpflege-Kollektionen.</p>",
         "collection_layout": "carousel",
         "column": 3,
