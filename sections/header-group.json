@@ -54,31 +54,21 @@
     },
     "header": {
       "type": "header",
-      "blocks": {
-        "judge_me_reviews_medals_gdbjcE": {
-          "type": "shopify://apps/judge-me-reviews/blocks/medals/61ccd3b1-a9f2-4160-9fe9-4fec8413e5d8",
-          "settings": {}
-        }
-      },
-      "block_order": [
-        "judge_me_reviews_medals_gdbjcE"
-      ],
       "settings": {
         "color_scheme": "scheme-1",
         "color_scheme_1": "scheme-1",
-        "logo_position": "top-left",
+        "logo_position": "top-center",
         "enable-header-wishlist": true,
-        "menu": "aphoria-men",
+        "menu": "main-menu",
         "menu_type_desktop": "mega",
         "sticky_header_type": "reduce-logo-size",
         "show_line_separator": false,
-        "enable_country_selector": true,
-        "enable_language_selector": true,
+        "enable_country_selector": false,
+        "enable_language_selector": false,
         "mobile_logo_position": "center",
-        "nav_font_size": 12,
         "margin_bottom": 0,
-        "padding_top": 36,
-        "padding_bottom": 32,
+        "padding_top": 20,
+        "padding_bottom": 0,
         "enable_megamenu": true
       }
     }
