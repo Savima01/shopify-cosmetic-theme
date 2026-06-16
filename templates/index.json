@@ -198,8 +198,9 @@
         "eyebrow_color": "#c9a57e",
         "value_title_color": "#c9a57e",
         "accent_color": "#7c1d3c",
+        "image": "shopify://shop_images/b-photorealistic-luxury.webp",
         "eyebrow": "Unsere Geschichte",
-        "heading": "<p><em>Schönheit,<br>neu definiert</em></p>",
+        "heading": "<p><em>Schönheit,<br/>neu definiert</em></p>",
         "text": "<p>APHORIA entstand aus der Überzeugung, dass Schönheitspflege ein Ritual sein sollte — ein Moment der reinen Verwöhnung. Jedes Produkt verbindet modernste Wissenschaft mit der Kraft natürlicher Inhaltsstoffe.</p>",
         "button_label": "Unsere Philosophie",
         "button_url": "shopify://pages/about"
