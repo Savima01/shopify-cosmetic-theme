@@ -12,7 +12,7 @@
     "aphoria_hero_main": {
       "type": "aphoria-hero",
       "custom_css": [
-        "h2 {font-size: 76px}"
+        "h2 {font-size: 76px;}"
       ],
       "settings": {
         "image": "shopify://shop_images/b_use_a_16_9_aspect_ra.jpg",
@@ -42,6 +42,7 @@
         "image_item_8Kq4yw": {
           "type": "image_item",
           "settings": {
+            "image": "shopify://shop_images/hydra-veil-moisturizer_d682e7e1-5b7d-42b3-8c21-1b7266e177f5.webp",
             "title": "Hautpflege",
             "des_bottom": "Seren, Feuchtigkeitspflege, Masken — modernste Formel für strahlende Haut.",
             "link": "Entdecken",
@@ -51,6 +52,7 @@
         "image_item_HNzABm": {
           "type": "image_item",
           "settings": {
+            "image": "shopify://shop_images/a-aphoria-rose-enzyme_33acece1-d668-45b3-98a4-41d9451c11f9.webp",
             "title": "Körperpflege",
             "des_bottom": "Luxuriöse Körperpflegeprodukte für samtweiches, verwöhntes Hautgefühl.",
             "link": "Entdecken",
@@ -60,6 +62,7 @@
         "image_item_6RTt7N": {
           "type": "image_item",
           "settings": {
+            "image": "shopify://shop_images/aphoria-luxury-fragrance_0205e1db-bd80-425b-a728-494ac13179b8.webp",
             "title": "Düfte",
             "des_bottom": "Komplexe Düfte, handgefertigt — ein Kunstwerk für die Sinne.",
             "link": "Entdecken",
