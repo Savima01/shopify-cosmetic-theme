@@ -17,29 +17,29 @@
         "text_CRTKVg": {
           "type": "text",
           "settings": {
-            "heading": "Cosmetic",
-            "subtext": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis risus leo, elementum in malesuada an darius ut augue. Cras sit amet lectus et justo feugiat euismod sed non erat.</p>"
+            "heading": "Aphoria",
+            "subtext": "<p>APHORIA steht für zeitlose Schönheitspflege, die deine Haut verwöhnt. Entwickelt für Frauen, die das Beste verdienen.<br/><br/></p>"
           }
         },
         "link_list_QfDaH8": {
           "type": "link_list",
           "settings": {
             "heading": "Shop",
-            "menu": "main-menu"
+            "menu": "footer-shop-men"
           }
         },
         "link_list_ja4XbM": {
           "type": "link_list",
           "settings": {
             "heading": "Search",
-            "menu": "hauptmenue"
+            "menu": "service-men"
           }
         },
         "text_TAkWHt": {
           "type": "text",
           "settings": {
             "heading": "Kontakt",
-            "subtext": "<p>Musterstr. 1, 12345 Musterstadt</p><p><strong>T</strong>: <a href=\"tel:0123456989\" target=\"_blank\" title=\"tel:0123456989\">0123456989 </a></p><p><strong>E</strong>: <a href=\"mailto:support@cosmetic.com\" target=\"_blank\" title=\"mailto:support@cosmetic.com\">support@cosmetic.com</a></p>"
+            "subtext": "<p>Musterstr. 1, <br/>12345 Musterstadt</p><p>☎️: <a href=\"tel:0123456989\" target=\"_blank\" title=\"tel:0123456989\">0123456989 </a></p><p>✉️: <a href=\"mailto:support@cosmetic.com\" target=\"_blank\" title=\"mailto:support@cosmetic.com\">support@cosmetic.com</a></p>"
           }
         }
       },
@@ -54,6 +54,7 @@
         "border-top": true,
         "newsletter_enable": true,
         "newsletter_heading": "Wöchentliche Beauty Tipps - direkt in dein Postfach.",
+        "newsletter_subheadline": "Melde dich jetzt zum Newsletter an.",
         "enable_follow_on_shop": true,
         "show_social": true,
         "payment_enable": true,
