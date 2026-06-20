@@ -311,8 +311,8 @@
       "type": "featured-blog",
       "settings": {
         "color_scheme": "scheme-5",
-        "heading": "Das APHORIA Journal",
-        "heading_size": "h2",
+        "heading": "APHORIA <em>Magazin</em>",
+        "heading_size": "h1",
         "description": "Beauty-Wissen, Ritualpflege und exklusive Einblicke in die Welt von APHORIA.",
         "blog": "news",
         "post_limit": 3,
