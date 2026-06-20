@@ -9,8 +9,8 @@
  */
 {
   "current": {
-    "logo": "shopify://shop_images/cosmetic-high-resolution-logo-black-transparent.png",
-    "logo_width": 70,
+    "logo": "shopify://shop_images/APHORIA_KInrgy_Logo.svg",
+    "logo_width": 50,
     "favicon": "shopify://shop_images/cosmetic-high-resolution-logo-black-transparent.png",
     "type_header_font": "bodoni_moda_n4",
     "type_header_base_size": 16,
@@ -231,50 +231,50 @@
       },
       "scheme-2": {
         "settings": {
-          "background": "#FAF6F3",
+          "background": "#faf6f3",
           "background_gradient": "",
-          "heading": "#0A0205",
+          "heading": "#0a0205",
           "text": "#1a0a10",
-          "button": "#7C1D3C",
-          "button_label": "#F2D0C8",
-          "secondary_button_label": "#7C1D3C",
-          "shadow": "#0A0205"
+          "button": "#7c1d3c",
+          "button_label": "#f2d0c8",
+          "secondary_button_label": "#7c1d3c",
+          "shadow": "#0a0205"
         }
       },
       "scheme-3": {
         "settings": {
-          "background": "#7C1D3C",
+          "background": "#7c1d3c",
           "background_gradient": "",
-          "heading": "#F2D0C8",
-          "text": "#F2D0C8",
-          "button": "#0A0205",
-          "button_label": "#F2D0C8",
-          "secondary_button_label": "#F2D0C8",
-          "shadow": "#0A0205"
+          "heading": "#f2d0c8",
+          "text": "#f2d0c8",
+          "button": "#0a0205",
+          "button_label": "#f2d0c8",
+          "secondary_button_label": "#f2d0c8",
+          "shadow": "#0a0205"
         }
       },
       "scheme-4": {
         "settings": {
           "background": "#1a0a10",
           "background_gradient": "",
-          "heading": "#C9A57E",
-          "text": "#F2D0C8",
-          "button": "#7C1D3C",
-          "button_label": "#F2D0C8",
-          "secondary_button_label": "#C9A57E",
-          "shadow": "#0A0205"
+          "heading": "#c9a57e",
+          "text": "#f2d0c8",
+          "button": "#7c1d3c",
+          "button_label": "#f2d0c8",
+          "secondary_button_label": "#c9a57e",
+          "shadow": "#0a0205"
         }
       },
       "scheme-5": {
         "settings": {
-          "background": "#F2D0C8",
+          "background": "#f2d0c8",
           "background_gradient": "",
-          "heading": "#0A0205",
-          "text": "#0A0205",
-          "button": "#0A0205",
-          "button_label": "#F2D0C8",
-          "secondary_button_label": "#0A0205",
-          "shadow": "#0A0205"
+          "heading": "#0a0205",
+          "text": "#0a0205",
+          "button": "#0a0205",
+          "button_label": "#f2d0c8",
+          "secondary_button_label": "#0a0205",
+          "shadow": "#0a0205"
         }
       },
       "scheme-c552c7b8-e38f-4a1e-900f-b6c6dccd546c": {
@@ -315,26 +315,26 @@
       },
       "scheme-6677d2d5-81e8-41ba-ab12-54cf59a35514": {
         "settings": {
-          "background": "#7C1D3C",
+          "background": "#7c1d3c",
           "background_gradient": "",
-          "heading": "#F2D0C8",
-          "text": "#F2D0C8",
-          "button": "#7C1D3C",
-          "button_label": "#F2D0C8",
-          "secondary_button_label": "#F2D0C8",
-          "shadow": "#0A0205"
+          "heading": "#f2d0c8",
+          "text": "#f2d0c8",
+          "button": "#7c1d3c",
+          "button_label": "#f2d0c8",
+          "secondary_button_label": "#f2d0c8",
+          "shadow": "#0a0205"
         }
       },
       "scheme-9f241b22-2614-46a4-a6e5-38712078031d": {
         "settings": {
-          "background": "#0A0205",
+          "background": "#0a0205",
           "background_gradient": "",
-          "heading": "#F2D0C8",
-          "text": "#F2D0C8",
-          "button": "#0A0205",
-          "button_label": "#F2D0C8",
-          "secondary_button_label": "#F2D0C8",
-          "shadow": "#0A0205"
+          "heading": "#f2d0c8",
+          "text": "#f2d0c8",
+          "button": "#0a0205",
+          "button_label": "#f2d0c8",
+          "secondary_button_label": "#f2d0c8",
+          "shadow": "#0a0205"
         }
       },
       "scheme-96abc58e-d546-4e46-a311-0f0c9cbe8b6d": {
