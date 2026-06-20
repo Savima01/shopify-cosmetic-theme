@@ -39,7 +39,7 @@
           "type": "text",
           "settings": {
             "heading": "Kontakt",
-            "subtext": "<p>Musterstr. 1, <br/>12345 Musterstadt</p><p>☎️: <a href=\"tel:0123456989\" target=\"_blank\" title=\"tel:0123456989\">0123456989 </a></p><p>✉️: <a href=\"mailto:support@cosmetic.com\" target=\"_blank\" title=\"mailto:support@cosmetic.com\">support@cosmetic.com</a></p>"
+            "subtext": "<p>APHORIA Beauty<br/>Musterstr. 1, <br/>12345 Musterstadt</p><p>☎️: <a href=\"tel:0123456989\" target=\"_blank\" title=\"tel:0123456989\">0123456989 </a></p><p>✉️: <a href=\"mailto:support@cosmetic.com\" target=\"_blank\" title=\"mailto:support@cosmetic.com\">support@cosmetic.com</a></p>"
           }
         }
       },
